@@ -1,0 +1,22 @@
+@import './variables/colors';
+@import './variables/sizes';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary_color;
+}
+
+section {
+    width: $section_width;
+    height: $section_height;
+    border-bottom: 5px solid $secondary_color;
+}
+
+@import './component_styles/header';
+@import './component_styles/home';
+@import './component_styles/svg.scss'

@@ -1,0 +1,33 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: $header_width;
+    height: $header_height;
+    padding-left: $header_padding_left;
+    background-color: $secondary_color;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+ul > li {
+    padding: 0.5rem 1rem;
+
+    list-style-type: none;
+    cursor: pointer;
+}
+
+ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text_color_light;
+}
