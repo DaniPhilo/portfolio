@@ -1,0 +1,65 @@
+.centered-section {
+    width: $section_width;
+    max-width: $max_section_width;
+    margin: 0 auto;
+}
+
+.project-card-left {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.project-card-left > .project-img {
+    background-color: greenyellow;
+    width: 55%;
+    height: 35vh;
+}
+
+.project-card-left > .project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+}
+
+.project-card-left > .project-info > .project-title > h3 {
+    text-align: end;
+}
+
+.project-card-left > .project-info > .project-description {
+    background-color: #321856DF;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.project-card-right {
+    position: relative;
+    margin: 8rem 0;
+}
+
+.project-card-right > .project-img {
+    background-color: greenyellow;
+    width: 55%;
+    height: 35vh;
+    margin-left: auto;
+}
+
+.project-card-right > .project-info {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+
+    width: 500px;
+}
+
+.project-card-right > .project-title > h3 {
+    text-align: end;
+}
+
+.project-card-right > .project-info > .project-description {
+    background-color: #420B45AA;
+    padding: 1rem;
+    border-radius: 5px;
+}

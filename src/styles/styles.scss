@@ -9,14 +9,34 @@
 
 body {
     background-color: $primary_color;
+    color: $text_color_light;
+    text-transform: capitalize;
 }
 
 section {
     width: $section_width;
-    height: $section_height;
-    border-bottom: 5px solid $secondary_color;
+    max-width: $max_section_width;
+    // height: $section_height;
+    margin: 0 auto;
+}
+
+.section-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+
+    margin-top: 2rem;
+}
+
+.section-title > .title-line {
+    width: 50%;
+    height: 1px;
+    background-color: $text_color_light;
 }
 
 @import './component_styles/header';
 @import './component_styles/home';
-@import './component_styles/svg.scss'
+@import './component_styles/svg.scss';
+@import './component_styles/projects';
+@import './component_styles/about.scss';

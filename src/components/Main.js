@@ -9,8 +9,8 @@ export default function Main() {
     return (
         <main>
             <Home />
-            <Projects />
             <About />
+            <Projects />
             <Contact />
         </main>
     )
