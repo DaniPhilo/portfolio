@@ -1,0 +1,61 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container > h3 {
+    margin: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+form > input,
+form > textarea {
+    width: 35vw;
+    height: 2rem;
+
+    background-color: $third_color;
+    color: $text_color_light;
+    border: none;
+    border-radius: 5px;
+}
+
+form > textarea {
+    height: 40vh;
+}
+
+form > input::placeholder {
+    padding-left: 0.5rem;
+    color: $text_color_light;
+}
+form > textarea::placeholder {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: $text_color_light;
+}
+
+form > button {
+    padding: 1rem 1.75rem;
+
+    background-color: $primary_color;
+    color: $text_color_light;
+    border: 2px solid $third_color;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: $third_color;
+    color: $accent_color;
+}

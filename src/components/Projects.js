@@ -10,9 +10,7 @@ export default function Projects() {
       </div>
 
       <div className='project-card-left'>
-        <div className="project-img">
-
-        </div>
+        <div className="project-img"></div>
 
         <div className="project-info">
           <div className="project-title">
@@ -25,9 +23,7 @@ export default function Projects() {
       </div>
 
       <div className='project-card-right'>
-        <div className="project-img">
-
-        </div>
+        <div className="project-img"></div>
 
         <div className="project-info">
           <div className="project-title">
