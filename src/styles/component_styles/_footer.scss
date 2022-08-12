@@ -1,0 +1,31 @@
+.footer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+
+    background-color: $secondary_color;
+}
+
+.footer-section > p {
+    font-size: 0.85rem;
+}
+
+.footer-section > p > span {
+    color: $accent_color;
+}
+
+.footer-section > p > a {
+    color: $text_color_light;
+    font-weight: bold;
+    transition: 0.25s ease-in-out;
+}
+.footer-section > p > a:hover {
+    color: $accent_color;
+}
