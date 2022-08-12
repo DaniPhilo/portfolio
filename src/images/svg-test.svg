@@ -11,10 +11,10 @@
         <tspan x="15%" y="25%" fontWeight='bolder' fill='#EC7100'>Daniel Carrasco</tspan>
     </text>
 
-    <text id='text-1' x="25%" y="15%" dominantBaseline="middle" textAnchor="end" fill="#FBE1BE">
-        <tspan x="80%" y="37%">Full</tspan>
-        <tspan x="80%" y="47%">Stack</tspan>
-        <tspan x="80%" y="57%">Developer</tspan>
+    <text id='text-2' x="25%" y="15%" dominantBaseline="middle" textAnchor="end" fill="#FBE1BE">
+        <tspan x="80%" y="37%"><tspan fontWeight='bolder' fill="#EC7100">F</tspan>ull</tspan>
+        <tspan x="80%" y="47%"><tspan fontWeight='bolder' fill="#EC7100">S</tspan>tack</tspan>
+        <tspan x="80%" y="57%"><tspan fontWeight='bolder' fill="#EC7100">D</tspan>eveloper</tspan>
     </text>    
 </svg>
 

@@ -11,7 +11,9 @@
 .about-img {
     width: 150px;
     height: 150px;
-    background-color: greenyellow;
+    background-image: url('../../images/CV_photo.jpeg');
+    background-position: 50% 30%;
+    background-size: cover;
     border-radius: 50%;
 }
 
