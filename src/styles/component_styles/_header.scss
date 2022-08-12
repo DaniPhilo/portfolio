@@ -6,9 +6,12 @@ header {
     top: 0;
     left: 0;
 
+    display: flex;
+    justify-content: end;
+
     width: $header_width;
     height: $header_height;
-    padding-left: $header_padding_left;
+    padding-right: $header_padding_right;
     background-color: $secondary_color;
 }
 
