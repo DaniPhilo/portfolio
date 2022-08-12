@@ -5,11 +5,12 @@
     align-items: center;
 }
 
-.form-container > h3 {
+.form-container>h3 {
     margin: 2rem 0;
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,8 +18,8 @@ form {
     gap: 1.5rem;
 }
 
-form > input,
-form > textarea {
+form>input,
+form>textarea {
     width: 35vw;
     height: 2rem;
 
@@ -28,21 +29,22 @@ form > textarea {
     border-radius: 5px;
 }
 
-form > textarea {
+form>textarea {
     height: 40vh;
 }
 
-form > input::placeholder {
+form>input::placeholder {
     padding-left: 0.5rem;
     color: $text_color_light;
 }
-form > textarea::placeholder {
+
+form>textarea::placeholder {
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     color: $text_color_light;
 }
 
-form > button {
+form>button {
     padding: 1rem 1.75rem;
 
     background-color: $primary_color;
@@ -55,7 +57,51 @@ form > button {
     cursor: pointer;
 }
 
-form > button:hover {
+form>button:hover {
     background-color: $third_color;
     color: $accent_color;
+}
+
+.success-module-container {
+    position: absolute;
+    top: $header_height;
+    left: -15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130%;
+    height: 100%;
+
+    background-color: hsla(0, 0%, 93%, 0.2);
+}
+
+.success-module {
+    padding: 2rem;
+    background-color: $secondary_color;
+    border-radius: 5px;
+}
+
+.success-module > button {
+    display: block;
+    margin: 0.5rem auto 0 auto;
+    padding: 0.5rem 1rem;
+
+    background-color: $secondary_color;
+    color: $text_color_light;
+    border: 2px solid $text_color_light;
+    border-radius: 5px;
+
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.success-module > button:hover {
+    color: $accent_color;
+    border: 2px solid $accent_color;
+}
+
+.hidden {
+    display: none;
 }

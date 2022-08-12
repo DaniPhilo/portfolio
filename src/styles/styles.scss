@@ -14,6 +14,7 @@ body {
 }
 
 section {
+    position: relative;
     width: $section_width;
     max-width: $max_section_width;
     // height: $section_height;

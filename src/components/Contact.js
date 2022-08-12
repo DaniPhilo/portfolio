@@ -5,6 +5,8 @@ import { send } from 'emailjs-com';
 
 export default function Contact() {
 
+  const [emailSent, setEmailSent] = useState(false);
+
   const [toSend, setToSend] = useState({
     name: '',
     email: '',
@@ -24,13 +26,19 @@ export default function Contact() {
       'PU0aLFliQfY6ZA1hA'
     )
       .then((response) => {
+        setEmailSent('yes');
         console.log('SUCCESS!', response.status, response.text);
       })
       .catch((err) => {
+        setEmailSent('no');
         console.log('FAILED...', err);
       });
 
-      setToSend({ name: '', email: '', message: '' });
+    setToSend({ name: '', email: '', message: '' });
+  }
+
+  const hideModule = () => {
+    setEmailSent(false);
   }
 
   return (
@@ -51,6 +59,13 @@ export default function Contact() {
 
           <button type='submit'>Submit</button>
         </form>
+      </div>
+
+      <div className={emailSent === 'yes' ? "success-module-container" : "hidden"}>
+        <div className="success-module">
+          <h3>{emailSent === 'yes' ? 'Email sent successfully' : 'An error ocurred. Please, try again later'}</h3>
+          <button type='button' onClick={hideModule}>OK</button>
+        </div>
       </div>
 
     </section>
