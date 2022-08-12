@@ -1,0 +1,42 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: flex-end;
+
+    width: $header_width;
+    height: $header_height;
+    padding-right: $header_padding_right;
+    background-color: $secondary_color;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+ul > li {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+
+    list-style-type: none;
+    cursor: pointer;
+}
+
+ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text_color_light;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}

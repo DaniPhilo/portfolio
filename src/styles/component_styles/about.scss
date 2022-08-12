@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.about-img {
+    width: 150px;
+    height: 150px;
+    background-image: url('../../images/CV_photo.jpeg');
+    background-position: 50% 30%;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-description {
+    width: calc(100% - 300px);
+}
+
+.about-skills {
+    width: 50%;
+}
+
+.about-skills > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

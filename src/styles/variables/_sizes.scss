@@ -1,0 +1,12 @@
+// HEADER
+$header_padding_right: 1rem;
+$header_width: calc(100vw - $header_padding_right);
+$header_height: 2.5rem;
+
+
+$section_padding: 1rem;
+$section_padding_top: calc($header_height + $section_padding);
+// $section_width: calc(100vw - $section_padding);
+$section_width: 75vw;
+$max_section_width: 1000px;
+$section_height: calc(100vh - $header_height);
