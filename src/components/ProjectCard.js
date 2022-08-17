@@ -27,7 +27,9 @@ export default function ProjectCard({ project, index }) {
                             {project.description}
                         </div>
                     </div>
-                    <div className="project-img"></div>
+                    <div className="project-img">
+                        <img src={project.img} alt="" />
+                    </div>
                 </div>
             }
         </>)

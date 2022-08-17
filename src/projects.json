@@ -9,7 +9,7 @@
     },
     {
         "name": "Snake2",
-        "img": "",
+        "img": "./images/thumbnails/test_thumbnail.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
         "technologies": [],
         "gh_link": "",
