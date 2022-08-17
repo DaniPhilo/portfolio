@@ -1,7 +1,7 @@
 [
     {
         "name": "Snake",
-        "img": "",
+        "img": "./images/thumbnails/snake_thumbnail2.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
         "technologies": [],
         "gh_link": "",
