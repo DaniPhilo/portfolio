@@ -11,7 +11,6 @@ export default function Projects() {
 
       <div className='project-card-left'>
         <div className="project-img"></div>
-
         <div className="project-info">
           <div className="project-title">
             <h3>project title</h3>
@@ -23,8 +22,7 @@ export default function Projects() {
       </div>
 
       <div className='project-card-right'>
-        <div className="project-img"></div>
-
+        
         <div className="project-info">
           <div className="project-title">
             <h3>project title</h3>
@@ -32,7 +30,9 @@ export default function Projects() {
           <div className='project-description'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.
           </div>
+          
         </div>
+        <div className="project-img"></div>
       </div>
     </section>
   )
