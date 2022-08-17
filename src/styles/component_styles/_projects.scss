@@ -6,21 +6,22 @@
 
 .project-card-left {
     position: relative;
+    display: flex;
+    align-items: center;
     margin: 2rem 0;
 }
 
 .project-card-left > .project-img {
+    display: inline-block;
     background-color: greenyellow;
     width: 55%;
     height: 35vh;
 }
 
 .project-card-left > .project-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 500px;
+    display: inline-block;
+    width: 55%;
+    margin-left: -10%;
 }
 
 .project-card-left > .project-info > .project-title > h3 {
@@ -36,22 +37,23 @@
 
 .project-card-right {
     position: relative;
+    display: flex;
+    align-items: center;
     margin: 8rem 0;
 }
 
 .project-card-right > .project-img {
+    display: inline-block;
     background-color: greenyellow;
     width: 55%;
     height: 35vh;
-    margin-left: auto;
 }
 
 .project-card-right > .project-info {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-
-    width: 500px;
+    display: inline-block;
+    width: 55%;
+    margin-right: -10%;
+    z-index: 2;
 }
 
 .project-card-right > .project-title > h3 {
