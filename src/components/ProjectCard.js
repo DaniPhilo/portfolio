@@ -15,6 +15,13 @@ export default function ProjectCard({ project, index }) {
                         <div className='project-description'>
                             {project.description}
                         </div>
+                        <div className="project-techs">
+                            <ul className="tech-list">
+                                {project.technologies.map((tech, index) => {
+                                    return <li key={index}>{tech}</li>
+                                })}
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 :
@@ -25,6 +32,13 @@ export default function ProjectCard({ project, index }) {
                         </div>
                         <div className='project-description'>
                             {project.description}
+                        </div>
+                        <div className="project-techs">
+                            <ul className="tech-list">
+                                {project.technologies.map((tech, index) => {
+                                    return <li key={index}>{tech}</li>
+                                })}
+                            </ul>
                         </div>
                     </div>
                     <div className="project-img">

@@ -16,14 +16,14 @@ header {
     background-color: $secondary_color;
 }
 
-ul {
+header > ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
 }
 
-ul > li {
+header > ul > li {
     display: flex;
     align-items: center;
 
@@ -33,7 +33,7 @@ ul > li {
     cursor: pointer;
 }
 
-ul > li > a {
+header > ul > li > a {
     text-decoration: none;
     text-transform: uppercase;
     color: $text_color_light;

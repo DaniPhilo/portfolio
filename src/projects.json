@@ -3,15 +3,15 @@
         "name": "Snake",
         "img": "./images/thumbnails/snake_thumbnail2.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
-        "technologies": [],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "gh_link": "",
         "tags": []
     },
     {
-        "name": "Snake2",
+        "name": "Trello",
         "img": "./images/thumbnails/test_thumbnail.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
-        "technologies": [],
+        "technologies": ["React", "TypeScript"],
         "gh_link": "",
         "tags": [] 
     }

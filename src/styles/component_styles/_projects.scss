@@ -24,7 +24,7 @@
 
 .project-card-left > .project-img > img {
     width: 100%;
-    height: 100%;
+    border-radius: 5px;
 }
 
 .project-card-left > .project-info {
@@ -37,6 +37,7 @@
 }
 
 .project-card-left > .project-info > .project-title > h3 {
+    margin: 0.5rem 0;
     text-align: end;
 }
 
@@ -44,6 +45,20 @@
     background-color: #321856DF;
     padding: 1rem;
     border-radius: 5px;
+    text-align: end;
+}
+
+.project-card-left > .project-info > .project-techs > .tech-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+.project-card-left > .project-info > .project-techs > .tech-list > li {
+    font-size: 0.9rem;
 }
 
 
@@ -79,14 +94,28 @@
 
 .project-card-right > .project-img > img {
     width: 100%;
+    border-radius: 5px;
 }
 
-.project-card-right > .project-title > h3 {
-    text-align: end;
+.project-card-right > .project-info > .project-title > h3 {
+    margin: 0.5rem 0;
+    text-align: start;
 }
 
 .project-card-right > .project-info > .project-description {
     background-color: #420B45AA;
     padding: 1rem;
     border-radius: 5px;
+}
+
+.project-card-right > .project-info > .project-techs > .tech-list {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+.project-card-right > .project-info > .project-techs > .tech-list > li {
+    font-size: 0.9rem;
 }
