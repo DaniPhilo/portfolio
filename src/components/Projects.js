@@ -10,7 +10,7 @@ export default function Projects() {
   // })
 
   return (
-    <section className='centered-section'>
+    <section className='centered-section' id='projects-section'>
 
       <div className="section-title">
         <h2>projects</h2>

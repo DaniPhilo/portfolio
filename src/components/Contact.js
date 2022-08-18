@@ -42,7 +42,7 @@ export default function Contact() {
   }
 
   return (
-    <section className='centered-section'>
+    <section className='centered-section' id='contact-section'>
 
       <div className="section-title">
         <h2>contact</h2>
