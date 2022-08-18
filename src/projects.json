@@ -4,7 +4,8 @@
         "img": "./images/thumbnails/snake_thumbnail2.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "gh_link": "",
+        "project_link": "https://wikipedia.com",
+        "gh_link": "https://github.com/DaniPhilo/snake",
         "tags": []
     },
     {
@@ -12,6 +13,7 @@
         "img": "./images/thumbnails/test_thumbnail.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
         "technologies": ["React", "TypeScript"],
+        "project_link": "https://wikipedia.com",
         "gh_link": "",
         "tags": [] 
     }
