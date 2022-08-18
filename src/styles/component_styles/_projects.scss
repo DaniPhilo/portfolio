@@ -25,10 +25,12 @@
 .project-card-left > .project-img > a {
     display: inline-block;
     width: 100%;
+    filter: grayscale(50%);
     transition: 0.25s ease-in-out;
 }
 .project-card-left > .project-img > a:hover {
-    transform: scale(1.1);
+    filter: none;
+    transform: scale(1.05);
 }
 
 .project-card-left > .project-img > a > img {
@@ -107,10 +109,12 @@
 .project-card-right > .project-img > a {
     display: inline-block;
     width: 100%;
+    filter: grayscale(50%);
     transition: 0.25s ease-in-out;
 }
 .project-card-right > .project-img > a:hover {
-    transform: scale(1.1);
+    filter: none;
+    transform: scale(1.05);
 }
 
 .project-card-right > .project-img > a > img {

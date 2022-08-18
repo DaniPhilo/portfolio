@@ -6,7 +6,7 @@ export default function ProjectCard({ project, index }) {
         {index % 2 === 0 ?
             <div className='project-card-left'>
                 <div className="project-img">
-                    <a href=""><img src={project.img} alt="" /></a>
+                    <a href={project.project_link} target="_blank"><img src={project.img} alt="" /></a>
                 </div>
                 <div className="project-info">
                     <div className="project-title">
@@ -48,7 +48,7 @@ export default function ProjectCard({ project, index }) {
                     </div>
                 </div>
                 <div className="project-img">
-                    <a href=""><img src={project.img} alt="" /></a>
+                    <a href={project.project_link} target="_blank"><img src={project.img} alt="" /></a>
                 </div>
             </div>
         }
