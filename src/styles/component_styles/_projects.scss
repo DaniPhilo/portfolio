@@ -12,6 +12,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+.project-card-left:first-child {
+    margin-top: 6rem;
+}
 
 .project-card-left > .project-img {
     // display: inline-block;

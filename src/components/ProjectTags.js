@@ -1,15 +1,13 @@
-// import React from 'react';
+import React from 'react';
 
-// import ProjectRecords from '../projects.json';
+export default function ProjectTags({ tags, filterProjects }) {
 
-// export default function ProjectTags({ setTag }) {
-
-//     return (
-//         <ul className="tags-list">
-//             <li>All</li>
-//             {ProjectRecords.map((project, index) => {
-//                 return <li key={index} onClick={setTag(project.tags[index])}>{project.tags[index]}</li>
-//             })}
-//         </ul>
-//     )
-// }
+    return (
+        <ul className="tags-list">
+            <li className="marked" onClick={(e) => filterProjects(e, 'All')}>All</li>
+            {tags.map((tag, index) => {
+                return <li className="tag-btn" key={index} onClick={(e) => filterProjects(e, tag)}>{tag}</li>
+            })}
+        </ul>
+    )
+}
