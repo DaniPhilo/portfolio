@@ -6,7 +6,7 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "project_link": "https://wikipedia.com",
         "gh_link": "https://github.com/DaniPhilo/snake",
-        "tags": []
+        "tags": ["JavaScript", "Games"]
     },
     {
         "name": "Trello",
@@ -15,6 +15,24 @@
         "technologies": ["React", "TypeScript"],
         "project_link": "https://wikipedia.com",
         "gh_link": "",
-        "tags": [] 
+        "tags": ["JavaScript", "React"] 
+    },
+    {
+        "name": "Trello",
+        "img": "./images/thumbnails/test_thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
+        "technologies": ["React", "TypeScript"],
+        "project_link": "https://wikipedia.com",
+        "gh_link": "",
+        "tags": ["JavaScript", "React"] 
+    },
+    {
+        "name": "Trello",
+        "img": "./images/thumbnails/test_thumbnail.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
+        "technologies": ["React", "TypeScript"],
+        "project_link": "https://wikipedia.com",
+        "gh_link": "",
+        "tags": ["JavaScript", "React"] 
     }
 ]

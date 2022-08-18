@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 import ProjectCard from './ProjectCard';
 import ProjectRecords from '../projects.json';
+// import ProjectTags from './ProjectTags';
+
 
 export default function Projects() {
 
-  // ProjectRecords.map(project => {
-  //   console.log(project);
-  // })
+const tags = [...new Set(ProjectRecords.map(project => project.tags).reduce((a, b) => a.concat(b)))];
+
+  const [displayProjects, setDisplayProjects] = useState(ProjectRecords);
+
+  const filterProjects = (tag) => {
+    if (tag === 'All') {
+      setDisplayProjects(ProjectRecords);
+      return
+    }
+    const filteredProjects = ProjectRecords.filter(project => project.tags.includes(tag));
+    setDisplayProjects(filteredProjects);
+  }
 
   return (
     <section className='centered-section' id='projects-section'>
@@ -17,33 +28,18 @@ export default function Projects() {
         <div className="title-line"></div>
       </div>
 
-      {ProjectRecords.map((project, index) => {
-        return <ProjectCard key={index} project={project} index={index}/>
-      })}
-
-      {/* <div className='project-card-left'>
-        <div className="project-img"></div>
-        <div className="project-info">
-          <div className="project-title">
-            <h3>project title</h3>
-          </div>
-          <div className='project-description'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.
-          </div>
-        </div>
+      <div className="tags-container">
+        <ul className="tags-list">
+          <li onClick={() => filterProjects("All")}>All</li>
+          {tags.map((tag, index) => {
+            return <li key={index} onClick={() => filterProjects(tag)}>{tag}</li>
+          })}
+        </ul>
       </div>
 
-      <div className='project-card-right'>
-        <div className="project-info">
-          <div className="project-title">
-            <h3>project title</h3>
-          </div>
-          <div className='project-description'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.
-          </div>
-        </div>
-        <div className="project-img"></div>
-      </div> */}
+      {displayProjects.map((project, index) => {
+          return <ProjectCard key={index} project={project} index={index} />
+      })}
     </section>
   )
 }
