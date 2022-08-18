@@ -29,8 +29,18 @@ aside {
     cursor: auto;
 }
 
-.icons-container > li > .fa-brands {
+.icons-container > li > a {
+    width: 100%;
+    height: 100%;
+}
+
+.icons-container > li > a > .fa-brands {
     font-size: 1.75rem;
     // background-color: aliceblue;
     color: $accent_color;
+    transition: 0.25s ease-in-out;
+}
+.icons-container > li > a > .fa-brands:hover {
+    color: $text_color_light;
+    transform: translateY(-25%);
 }
