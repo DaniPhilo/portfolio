@@ -21,6 +21,7 @@ header > ul {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
+    margin-right: 12.5vw;
 }
 
 header > ul > li {
@@ -37,6 +38,9 @@ header > ul > li > a {
     text-decoration: none;
     text-transform: uppercase;
     color: $text_color_light;
-    font-weight: bold;
     letter-spacing: 0.15rem;
+    transition: 0.25s ease-in-out;
+}
+header > ul > li > a:hover {
+    color: $accent-color;
 }
