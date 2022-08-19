@@ -44,3 +44,7 @@ header > ul > li > a {
 header > ul > li > a:hover {
     color: $accent-color;
 }
+
+.active {
+    color: $accent-color;
+}
