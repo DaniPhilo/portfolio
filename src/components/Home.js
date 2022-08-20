@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as SVG } from '../images/svg-test.svg'
+import { ReactComponent as SVG } from '../assets/svg-test.svg'
 
 export default function Home() {
     return (
