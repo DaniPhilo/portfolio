@@ -27,11 +27,13 @@ export default function Contact() {
     )
       .then((response) => {
         setEmailSent('yes');
-        console.log('SUCCESS!', response.status, response.text);
+        document.body.style.overflow= 'hidden';
+        console.log('E-mail sent successfully', response.status, response.text);
       })
       .catch((err) => {
         setEmailSent('no');
-        console.log('FAILED...', err);
+        document.body.style.overflow= 'hidden';
+        console.log('Sending e-mail failed', err);
       });
 
     setToSend({ name: '', email: '', message: '' });
@@ -39,6 +41,7 @@ export default function Contact() {
 
   const hideModule = () => {
     setEmailSent(false);
+    document.body.style.overflow = 'auto';
   }
 
   return (
@@ -64,6 +67,7 @@ export default function Contact() {
       </div>
 
       <div className={emailSent === 'yes' ? "success-module-container" : "hidden"}>
+      {/* <div className="success-module-container"> */}
         <div className="success-module">
           <h3>{emailSent === 'yes' ? 'Email sent successfully' : 'An error ocurred. Please, try again later'}</h3>
           <button type='button' onClick={hideModule}>OK</button>
