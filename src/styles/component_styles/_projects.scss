@@ -38,7 +38,7 @@
 
 .project-card-left > .project-img > a > img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 .project-card-left > .project-info {
@@ -59,7 +59,7 @@
 .project-card-left > .project-info > .project-description {
     background-color: #321856DF;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: $border_radius;
     text-align: end;
 }
 
@@ -122,7 +122,7 @@
 
 .project-card-right > .project-img > a > img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 .project-card-right > .project-info {
@@ -138,7 +138,7 @@
 
 .project-card-right > .project-img > img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 .project-card-right > .project-info > .project-title > h3 {
@@ -149,7 +149,7 @@
 .project-card-right > .project-info > .project-description {
     background-color: #420B45AA;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {

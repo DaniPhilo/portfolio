@@ -40,7 +40,7 @@ form>textarea {
     background-color: $third_color;
     color: $text_color_light;
     border: none;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 form>textarea {
@@ -64,7 +64,7 @@ form>button {
     background-color: $primary_color;
     color: $text_color_light;
     border: 2px solid $third_color;
-    border-radius: 5px;
+    border-radius: $border_radius;
     font-size: 1rem;
 
     transition: 0.25s ease-in-out;
@@ -94,7 +94,7 @@ form>button:hover {
 .success-module {
     padding: 2rem;
     background-color: $secondary_color;
-    border-radius: 5px;
+    border-radius: $border_radius;
 }
 
 .success-module > button {
@@ -105,7 +105,7 @@ form>button:hover {
     background-color: $secondary_color;
     color: $text_color_light;
     border: 2px solid $text_color_light;
-    border-radius: 5px;
+    border-radius: $border_radius;
 
     transition: 0.25s ease-in-out;
     cursor: pointer;

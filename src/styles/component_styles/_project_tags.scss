@@ -13,7 +13,7 @@
 .tag-btn {
     padding: 0.25rem;
     border: 1px solid $text_color_light;
-    border-radius: 5px;
+    border-radius: $border_radius;
     font-size: 0.9rem;
     transition: 0.25s ease-in-out;
     cursor: pointer;
@@ -28,7 +28,7 @@
     padding: 0.25rem;
     background-color: $secondary-color;
     border: 1px solid $secondary-color;
-    border-radius: 5px;
+    border-radius: $border_radius;
     font-size: 0.9rem;
     transition: 0.25s ease-in-out;
     cursor: pointer;
