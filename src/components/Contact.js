@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import EmailConfig from '../assets/config.js';
+import { EmailConfig } from '../assets/config.js';
 
 export default function Contact() {
 
@@ -28,12 +28,12 @@ export default function Contact() {
     )
       .then((response) => {
         setEmailSent('yes');
-        document.body.style.overflow= 'hidden';
+        document.body.style.overflow = 'hidden';
         console.log('E-mail sent successfully', response.status, response.text);
       })
       .catch((err) => {
         setEmailSent('no');
-        document.body.style.overflow= 'hidden';
+        document.body.style.overflow = 'hidden';
         console.log('Sending e-mail failed', err);
       });
 
@@ -68,7 +68,7 @@ export default function Contact() {
       </div>
 
       <div className={emailSent === 'yes' ? "success-module-container" : "hidden"}>
-      {/* <div className="success-module-container"> */}
+        {/* <div className="success-module-container"> */}
         <div className="success-module">
           <h3>{emailSent === 'yes' ? 'Email sent successfully' : 'An error ocurred. Please, try again later'}</h3>
           <button type='button' onClick={hideModule}>OK</button>
