@@ -3,7 +3,7 @@ import { ReactComponent as SVG } from '../assets/svg-test.svg'
 
 export default function Home() {
     return (
-        <section id='home-section' name='home-section'>
+        <section className='centered-section' id='home-section' name='home-section'>
             
             {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum aut voluptatibus vero officiis repellendus harum nam dolorum vel nihil tempora blanditiis in, nemo quae. Delectus, tenetur? Asperiores quis soluta vitae.</p> */}
             {/* <div className='triangles-container'>

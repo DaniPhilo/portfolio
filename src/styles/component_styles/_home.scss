@@ -3,9 +3,9 @@
 
 #home-section {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 1rem);
+    padding-top: 1rem;
     overflow: hidden;
-    scroll-padding-top: 20rem;
 }
 
 .triangles-container {

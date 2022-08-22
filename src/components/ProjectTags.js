@@ -4,7 +4,7 @@ export default function ProjectTags({ tags, filterProjects }) {
 
     return (
         <>
-            <i class="fa-solid fa-filter"></i>
+            <i className="fa-solid fa-filter"></i>
             <ul className="tags-list">
                 <li className="marked" onClick={(e) => filterProjects(e, 'All')}>All</li>
                 {tags.map((tag, index) => {

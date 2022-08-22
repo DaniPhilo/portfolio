@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: calc($header-height + 2rem);
+    // scroll-padding-top: calc($header-height + 2rem);
     letter-spacing: 0.5px;
 }
 
@@ -16,12 +16,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
+.centered-section {
     position: relative;
     width: $section_width;
     max-width: $max_section_width;
     // height: $section_height;
     margin: 0 auto;
+    padding-top: calc($header-height);
 }
 
 .section-title {
