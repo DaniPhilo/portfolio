@@ -7,7 +7,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     // scroll-padding-top: calc($header-height + 2rem);
-    letter-spacing: 0.5px;
 }
 
 body {
@@ -42,11 +41,22 @@ body {
 
 h2 {
     text-transform: capitalize;
-    letter-spacing: 3px;
+    font-size: $title_size;
+    letter-spacing: $title_letter_spacing;
 }
 
 h3 {
-    letter-spacing: 2px;
+    font-size: $subtitle_size;
+    letter-spacing: $subtitle_letter_spacing;
+}
+
+p {
+    font-size: $paragraph_size;
+    letter-spacing: $paragraph_letter_spacing;
+}
+
+button {
+    letter-spacing: $paragraph_letter_spacing;
 }
 
 @import './component_styles/header';

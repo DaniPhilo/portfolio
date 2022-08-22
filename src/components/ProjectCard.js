@@ -13,7 +13,7 @@ export default function ProjectCard({ project, index }) {
                         <h3>{project.name}</h3>
                     </div>
                     <div className='project-description'>
-                        {project.description}
+                        <p>{project.description}</p>
                     </div>
                     <div className="project-techs">
                         <ul className="tech-list">
@@ -34,7 +34,7 @@ export default function ProjectCard({ project, index }) {
                         <h3>{project.name}</h3>
                     </div>
                     <div className='project-description'>
-                        {project.description}
+                        <p>{project.description}</p>
                     </div>
                     <div className="project-techs">
                         <ul className="tech-list">
