@@ -55,8 +55,7 @@ export default function Contact() {
 
       <div className="form-container">
         <h3>Get in touch</h3>
-        <p>Do you have a question or want to work together? You can contact me through this formulary.</p>
-        <p>Your email information <span>will not</span> be stored in any database or sold to any third parties. It will be used only to answer you back.</p>
+        <p>Do you have a question or want to work together? <br></br>You can contact me through this formulary.</p>
 
         <form onSubmit={onSubmit}>
           <input type="text" name='name' placeholder='Name' value={toSend.name} onChange={handleChange} />
@@ -65,6 +64,7 @@ export default function Contact() {
 
           <button type='submit'>Submit</button>
         </form>
+        <p>Your email information <span>will not</span> be stored in any database or sold to any third parties. It will be used only to answer you back.</p>
       </div>
 
       <div className={emailSent === 'yes' ? "success-module-container" : "hidden"}>

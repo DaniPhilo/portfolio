@@ -37,10 +37,10 @@ aside {
 .icons-container > li > a > .fa-brands {
     font-size: 1.75rem;
     // background-color: aliceblue;
-    color: $accent_color;
+    color: $text_color_light;
     transition: 0.25s ease-in-out;
 }
 .icons-container > li > a > .fa-brands:hover {
-    color: $text_color_light;
+    color: $accent_color;
     transform: translateY(-25%);
 }

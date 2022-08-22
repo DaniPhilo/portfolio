@@ -2,6 +2,7 @@
     width: $section_width;
     max-width: $max_section_width;
     margin: 0 auto;
+    scroll-padding-top: calc($header-height + 2rem);
 }
 
 .project-card-left {
@@ -13,7 +14,7 @@
     grid-template-columns: repeat(12, 1fr);
 }
 .project-card-left:first-child {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .project-card-left > .project-img {
@@ -21,7 +22,7 @@
     // // background-color: greenyellow;
     // width: 55%;
     // height: 35vh;
-    grid-column: 1 / 9;
+    grid-column: 2 / 9;
     grid-row: 1 / 2;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .project-card-left > .project-info > .project-description {
-    background-color: hsl(182, 96%, 40%, 0.7);
+    background-color: $accent_color_transparent;
     padding: 1rem;
     border-radius: $border_radius;
     text-align: end;
@@ -84,10 +85,13 @@
 
 .project-card-left > .project-info > .gh-project-link > a {
     font-size: 1.5rem;
-    transition: 0.25s ease-in-out;
 }
-.project-card-left > .project-info > .gh-project-link > a:hover {
+.project-card-left > .project-info > .gh-project-link > a:hover i {
+    color: $accent_color;
+}
+.project-card-left > .project-info > .gh-project-link > a > i {
     color: $text_color_light;
+    transition: 0.25s ease-in-out;
 }
 
 
@@ -105,7 +109,7 @@
     // background-color: greenyellow;
     // width: 55%;
     // height: 35vh;
-    grid-column: 5 / 13;
+    grid-column: 5 / 12;
     grid-row: 1 / 2;
 }
 
@@ -147,13 +151,9 @@
 }
 
 .project-card-right > .project-info > .project-description {
-    background-color: #420B45AA;
+    background-color: $accent_color_transparent;
     padding: 1rem;
     border-radius: $border_radius;
-}
-
-.project-card-right > .project-info > .project-description:nth-of-type(2){
-    background-color: 	hsl(271, 68%, 32%, 0.5);
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {
@@ -176,8 +176,11 @@
 
 .project-card-right > .project-info > .gh-project-link > a {
     font-size: 1.5rem;
+}
+.project-card-right > .project-info >.gh-project-link > a > i {
+    color: $text_color_light_variation;
     transition: 0.25s ease-in-out;
 }
-.project-card-right > .project-info > .gh-project-link > a:hover {
-    color: $text_color_light;
+.project-card-right > .project-info > .gh-project-link > a:hover i {
+    color: $accent_color;
 }
