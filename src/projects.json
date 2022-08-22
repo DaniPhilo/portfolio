@@ -1,8 +1,8 @@
 [
     {
-        "name": "Snake",
+        "name": "Snake Game",
         "img": "./images/thumbnails/snake_thumbnail2.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
+        "description": "Who doesn't remember this game? Good old classics never die, and that's why I have decided to develop this snake game simulator as a tribute. Customize your speed, colors, and give it a try! Many more features will be added in the future.",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "project_link": "https://wikipedia.com",
         "gh_link": "https://github.com/DaniPhilo/snake",
