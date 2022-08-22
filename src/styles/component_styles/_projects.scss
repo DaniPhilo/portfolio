@@ -57,7 +57,7 @@
 }
 
 .project-card-left > .project-info > .project-description {
-    background-color: #321856DF;
+    background-color: hsl(182, 96%, 40%, 0.7);
     padding: 1rem;
     border-radius: $border_radius;
     text-align: end;
@@ -150,6 +150,10 @@
     background-color: #420B45AA;
     padding: 1rem;
     border-radius: $border_radius;
+}
+
+.project-card-right > .project-info > .project-description:nth-of-type(2){
+    background-color: 	hsl(271, 68%, 32%, 0.5);
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {

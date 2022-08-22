@@ -37,7 +37,7 @@ form>textarea {
     width: 35vw;
     height: 2rem;
 
-    background-color: $third_color;
+    background-color: $secondary_color;
     color: $text_color_light;
     border: none;
     border-radius: $border_radius;
@@ -63,7 +63,7 @@ form>button {
 
     background-color: $primary_color;
     color: $text_color_light;
-    border: 2px solid $third_color;
+    border: 2px solid $text_color_light;
     border-radius: $border_radius;
     font-size: 1rem;
 
@@ -72,8 +72,9 @@ form>button {
 }
 
 form>button:hover {
-    background-color: $third_color;
-    color: $accent_color;
+    background-color: $accent_color;
+    // color: $accent_color;
+    border: 2px solid $accent_color;
 }
 
 .success-module-container {
