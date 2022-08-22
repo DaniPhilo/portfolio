@@ -55,6 +55,7 @@
     padding: 1.5rem;
     border-radius: $border_radius;
     text-align: end;
+    line-height: $paragraph_line_height;
 }
 
 .project-card-left > .project-info > .project-techs > .tech-list {
@@ -147,6 +148,7 @@
     background-color: $accent_color_transparent;
     padding: 1.5rem;
     border-radius: $border_radius;
+    line-height: $paragraph_line_height;
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {
