@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Icons_sidebar() {
+
+    const [windowSize, setWindowSize] = useState('');
+
+    const updateWindowWidth = () => {
+        setWindowSize(window.innerWidth);
+    }
+
+    window.addEventListener('resize', updateWindowWidth);
 
     const toGitHub = () => {
         return window.open("https://github.com/DaniPhilo?tab=repositories");
@@ -11,7 +19,7 @@ export default function Icons_sidebar() {
     }
 
     return (
-        <aside>
+        <aside className={`${windowSize > 769 ? 'full-sidebar' : 'mobile-sidebar'}`}>
 
             <ul className='icons-container'>
                 <li>

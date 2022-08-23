@@ -2,8 +2,8 @@
     main {
         overflow: hidden;
     }
-    
-    aside {
+
+    .full-sidebar {
         width: 5vw;
     }
 
@@ -49,6 +49,42 @@
 }
 
 @media (max-width: 769px) {
-    
-    
+    .centered-section {
+        padding-top: 2rem;
+    }
+
+    .about-description {
+        width: calc(100% - 200px);
+    }
+
+    form {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-description {
+        width: 100%;
+    }
+
+    .about-skills {
+        width: 80%;
+    }
+
+    .about-skills > ul {
+        row-gap: 1rem;
+    }
+
+    .project-card-left,
+    .project-card-right {
+        margin-top: 2rem;
+    }
+
+    form {
+        width: 80vw;
+    }
 }

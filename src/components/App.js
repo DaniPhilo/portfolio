@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Header from './Header'
 import IconsSidebar from './IconsSidebar'
@@ -9,10 +9,19 @@ import '../styles/styles.scss'
 
 
 export default function App() {
+
+  const [windowSize, setWindowSize] = useState('');
+
+  const updateWindowWidth = () => {
+    setWindowSize(window.innerWidth);
+  }
+
+  window.addEventListener('resize', updateWindowWidth);
+
   return (
     <>
       <Header />
-      <IconsSidebar />
+      {windowSize > 769 && <IconsSidebar />}
       <Main />
       <Footer />
     </>
