@@ -81,7 +81,45 @@
 
     .project-card-left,
     .project-card-right {
-        margin-top: 2rem;
+        margin-top: 4rem;
+    }
+    .project-card-left > .project-img,
+    .project-card-right > .project-img {
+        grid-column: 1 / 13;
+        border-radius: $border_radius;
+    }
+    .project-card-left > .project-info,
+    .project-card-right > .project-info {
+        grid-column: 1 / 13;
+        height: 100%;
+        padding: 1rem 0;
+        background-color: hsla(273, 28%, 38%, 0.75);
+        border-radius: $border_radius;
+    }
+    .project-card-left > .project-info > .project-title > h3,
+    .project-card-right > .project-info > .project-title > h3 {
+        padding-left: 1.5rem;
+        text-align: start;
+    }
+    .project-card-left > .project-info > .project-description,
+    .project-card-right > .project-info > .project-description {
+        background-color: transparent;
+        text-align: start;
+    }
+    .project-card-left > .project-info > .project-techs > .tech-list,
+    .project-card-right > .project-info > .project-techs > .tech-list {
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+    }
+    .project-card-left > .project-info > .gh-project-link,
+    .project-card-right > .project-info > .gh-project-link {
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+    }
+
+    .tags-list {
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
     form {
