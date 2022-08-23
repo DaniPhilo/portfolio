@@ -18,7 +18,16 @@ export default function Home() {
                     <SVG />
                 </div>
                 :
-                <div className="home-title">HOME</div>
+                <div className="home-title">
+                    <div className="title1">
+                       <h1>Hi, I'm</h1>
+                       <h1>Daniel Carrasco</h1>
+                    </div>
+                    <div className="title2">
+                       <h1>Full-Stack Developer</h1>
+                    </div>
+                    <a href="#projects-section">Check out my work!</a>
+                </div>
             }
 
         </section>
