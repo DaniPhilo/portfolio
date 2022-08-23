@@ -1,0 +1,47 @@
+@media (max-width: 1000px) {
+    aside {
+        width: 5vw;
+    }
+
+    .centered-section {
+        width: calc($section-width + 10vw);
+    }
+
+    // HEADER
+    header > ul {
+        width: calc($section-width + 10vw);
+    }
+
+    // HOME
+    #home-section {
+        padding-top: 0;
+    }
+
+    // ABOUT
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    // PROJECTS
+    .project-card-left > .project-img {
+        grid-column: 1 / 9;
+    }
+    
+    .project-card-left > .project-info {
+        grid-column: 6 / 13;
+    }
+
+    .project-card-right > .project-img {
+        grid-column: 4 / 12;
+    }
+    
+    .project-card-right > .project-info {
+        grid-column: 1 / 8;
+    }
+}
+
+@media (max-width: 769px) {
+    
+    
+}
