@@ -13,6 +13,7 @@ export default function Header() {
 
     useEffect(() => {
         sections = document.querySelectorAll('section');
+        setWindowSize(window.innerWidth);
     }, []);
 
     const changeSection = () => {
@@ -28,7 +29,10 @@ export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
-        setShowMenu(prevState => !prevState);
+        if (windowSize <= 769) {
+            setShowMenu(prevState => !prevState);
+        }
+        return
     }
 
     window.addEventListener('scroll', changeSection);
