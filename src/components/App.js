@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import Header from './Header'
 import IconsSidebar from './IconsSidebar'
@@ -15,6 +15,10 @@ export default function App() {
   const updateWindowWidth = () => {
     setWindowSize(window.innerWidth);
   }
+
+  useEffect(() => {
+    updateWindowWidth();
+  })
 
   window.addEventListener('resize', updateWindowWidth);
 

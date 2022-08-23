@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function Icons_sidebar() {
 
-    const [windowSize, setWindowSize] = useState('');
+    const [windowSize, setWindowSize] = useState(false);
 
-    const updateWindowWidth = () => {
+    const updateWindowSize = () => {
         setWindowSize(window.innerWidth);
     }
-
-    window.addEventListener('resize', updateWindowWidth);
 
     const toGitHub = () => {
         return window.open("https://github.com/DaniPhilo?tab=repositories");
@@ -18,8 +16,14 @@ export default function Icons_sidebar() {
         return window.open("https://www.linkedin.com/in/daniel-carrasco-casado/");
     }
 
+    useEffect(() => {
+        updateWindowSize();
+    }, []);
+
+    window.addEventListener('resize', updateWindowSize);
+
     return (
-        <aside className={`${windowSize > 769 ? 'full-sidebar' : 'mobile-sidebar'}`}>
+        <aside className={windowSize > 769 || !windowSize ? 'full-sidebar' : 'mobile-sidebar'}>
 
             <ul className='icons-container'>
                 <li>
