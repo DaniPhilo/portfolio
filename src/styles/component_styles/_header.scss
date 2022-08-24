@@ -1,0 +1,162 @@
+.full-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+
+    width: $header_width;
+    height: $header_height;
+    background-color: $secondary_color;
+}
+
+.full-header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    // margin-right: 12.5vw;
+    width: $section-width;
+    max-width: $max_section_width;
+}
+
+.full-header > ul > li {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.full-header > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text_color_light;
+    // letter-spacing: 0.15rem;
+    letter-spacing: 2.5px;
+    transition: 0.25s ease-in-out;
+}
+.full-header > ul > li > a:hover {
+    color: $accent-color;
+}
+
+.full-header > ul > li > .active {
+    color: $accent-color;
+}
+
+
+// MOBILE HEADER
+.mobile-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    width: 65vw;
+    height: 100vh;
+
+    background-color: $secondary_color;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.mobile-header > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    width: 100%;
+
+    list-style-type: none;
+}
+
+.mobile-header > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 2rem;
+    // padding: 0.5rem 1.5rem;
+    color: $text_color_light;
+}
+
+.mobile-header > ul > li:hover a {
+    color: $accent-color;
+}
+
+.mobile-header > ul > li > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: $text_color_light;
+}
+
+.mobile-header > ul > li > .active {
+    color: $accent-color;
+}
+
+.hamburger-container.show-btn {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    z-index: 11;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 100%;
+    height: 3px;
+    background-color: $text_color_light;
+}
+
+.hamburger::before {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+
+    background-color: $text_color_light;
+}
+
+.hamburger::after {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+
+    background-color: $text_color_light;
+}
+
+.mobile-header.display-menu {
+    transform: translateX(0);
+}
+
+.hide-btn {
+    display: none;
+}

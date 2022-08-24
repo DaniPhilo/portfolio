@@ -1,0 +1,47 @@
+.tags-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.tags-container > i {
+    color: $accent_color;
+}
+
+.tags-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    list-style-type: none;
+}
+
+.tag-btn {
+    padding: 0.25rem;
+    border: 1px solid $text_color_light;
+    border-radius: $border_radius;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.tag-btn:hover {
+    color: $accent_color;
+    // background-color: $accent_color;
+    border: 1px solid $primary_color;
+}
+
+.marked {
+    padding: 0.25rem;
+    // background-color: $accent_color;
+    color: $accent_color;
+    border: 1px solid $primary_color;
+    border-radius: $border_radius;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}

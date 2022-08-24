@@ -1,0 +1,181 @@
+.project-card-left {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.project-card-left:first-child {
+    margin-top: 3rem;
+}
+
+.project-card-left > .project-img {
+    // display: inline-block;
+    // // background-color: greenyellow;
+    // width: 55%;
+    // height: 35vh;
+    grid-column: 2 / 9;
+    grid-row: 1 / 2;
+}
+
+.project-card-left > .project-img > a {
+    display: inline-block;
+    width: 100%;
+    filter: grayscale(50%);
+    transition: 0.25s ease-in-out;
+}
+.project-card-left > .project-img > a:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+.project-card-left > .project-img > a > img {
+    width: 100%;
+    border-radius: $border_radius;
+}
+
+.project-card-left > .project-info {
+    // display: inline-block;
+    // width: 55%;
+    // margin-left: -10%;
+    grid-column: 8 / 13;
+    grid-row: 1 / 2;
+    align-self: center;
+    z-index: 2;
+}
+
+.project-card-left > .project-info > .project-title > h3 {
+    margin: 0.5rem 0;
+    text-align: end;
+}
+
+.project-card-left > .project-info > .project-description {
+    background-color: $accent_color_transparent;
+    padding: 1.5rem;
+    border-radius: $border_radius;
+    text-align: end;
+    line-height: $paragraph_line_height;
+}
+
+.project-card-left > .project-info > .project-techs > .tech-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+.project-card-left > .project-info > .project-techs > .tech-list > li {
+    font-size: 0.9rem;
+}
+
+.project-card-left > .project-info > .gh-project-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.project-card-left > .project-info > .gh-project-link > a {
+    font-size: 1.5rem;
+}
+.project-card-left > .project-info > .gh-project-link > a:hover i {
+    color: $accent_color;
+}
+.project-card-left > .project-info > .gh-project-link > a > i {
+    color: $text_color_light;
+    transition: 0.25s ease-in-out;
+}
+
+
+.project-card-right {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 8rem;
+}
+
+.project-card-right > .project-img {
+    // display: inline-block;
+    // background-color: greenyellow;
+    // width: 55%;
+    // height: 35vh;
+    grid-column: 5 / 12;
+    grid-row: 1 / 2;
+}
+
+.project-card-right > .project-img > a {
+    display: inline-block;
+    width: 100%;
+    filter: grayscale(50%);
+    transition: 0.25s ease-in-out;
+}
+.project-card-right > .project-img > a:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+.project-card-right > .project-img > a > img {
+    width: 100%;
+    border-radius: $border_radius;
+}
+
+.project-card-right > .project-info {
+    // display: inline-block;
+    // width: 55%;
+    // margin-right: -10%;
+    // z-index: 2;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    z-index: 2;
+    align-self: center;
+}
+
+.project-card-right > .project-img > img {
+    width: 100%;
+    border-radius: $border_radius;
+}
+
+.project-card-right > .project-info > .project-title > h3 {
+    margin: 0.5rem 0;
+    text-align: start;
+}
+
+.project-card-right > .project-info > .project-description {
+    background-color: $accent_color_transparent;
+    padding: 1.5rem;
+    border-radius: $border_radius;
+    line-height: $paragraph_line_height;
+}
+
+.project-card-right > .project-info > .project-techs > .tech-list {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+    list-style-type: none;
+}
+
+.project-card-right > .project-info > .project-techs > .tech-list > li {
+    font-size: 0.9rem;
+}
+
+.project-card-right > .project-info > .gh-project-link {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+.project-card-right > .project-info > .gh-project-link > a {
+    font-size: 1.5rem;
+}
+.project-card-right > .project-info >.gh-project-link > a > i {
+    color: $text_color_light_variation;
+    transition: 0.25s ease-in-out;
+}
+.project-card-right > .project-info > .gh-project-link > a:hover i {
+    color: $accent_color;
+}

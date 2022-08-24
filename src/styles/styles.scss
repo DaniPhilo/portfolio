@@ -1,0 +1,71 @@
+@import './variables/colors';
+@import './variables/sizes';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    // scroll-padding-top: calc($header-height + 2rem);
+}
+
+body {
+    position: relative;
+    background-color: $primary_color;
+    color: $text_color_light;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centered-section {
+    position: relative;
+    width: $section_width;
+    max-width: $max_section_width;
+    // height: $section_height;
+    margin: 0 auto;
+    padding-top: calc($header-height);
+}
+
+.section-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+
+    margin-top: 2rem;
+}
+
+.section-title > .title-line {
+    width: 50%;
+    height: 1px;
+    background-color: $text_color_light;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: $title_size;
+    letter-spacing: $title_letter_spacing;
+}
+
+h3 {
+    font-size: $subtitle_size;
+    letter-spacing: $subtitle_letter_spacing;
+}
+
+p {
+    font-size: $paragraph_size;
+    letter-spacing: $paragraph_letter_spacing;
+}
+
+button {
+    letter-spacing: $paragraph_letter_spacing;
+}
+
+@import './component_styles/header';
+@import './component_styles/home';
+@import './component_styles/projects';
+@import './component_styles/project_tags';
+@import './component_styles/about.scss';
+@import './component_styles/contact';
+@import './component_styles/footer';
+@import './component_styles/icons_sidebar';
+@import './media_queries';

@@ -1,0 +1,25 @@
+// HEADER
+$header_padding_right: 1rem;
+$header_width: 100vw;
+$header_height: 4rem;
+
+// SECTIONS
+$section_padding: 1rem;
+$section_padding_top: calc($header_height + $section_padding);
+// $section_width: calc(100vw - $section_padding);
+$section_width: 75vw;
+$max_section_width: 1000px;
+$section_height: calc(100vh - $header_height);
+
+// FONTS, BTNS, ETC.
+$logo_letter_size: 3rem;
+$title_size: 1.75rem;
+$subtitle_size: 1.25rem;
+$paragraph_size: 1rem;
+
+$title_letter_spacing: 3px;
+$subtitle_letter_spacing: 2px;
+$paragraph_letter_spacing: 0.5px;
+
+$paragraph_line_height: 1.25rem;
+$border_radius: 3px;

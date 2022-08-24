@@ -1,0 +1,20 @@
+
+
+
+<svg viewBox="-17.5 -120 1024 768" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id='triangle-1' d="M889 553C894.523 553 899 548.523 899 543V104.431C899 96.9371 891.062 92.1059 884.406 95.5487L36.5056 534.118C27.1987 538.932 30.6216 553 41.0998 553H889Z" fill="#64467D" />
+
+    <path id='triangle-2' d="M91 9.99999C91 4.47714 95.4772 0 101 0H948.9C959.378 0 962.801 14.0683 953.494 18.8822L105.594 457.451C98.9381 460.894 91 456.063 91 448.569V9.99999Z" fill="#201e2c" />
+
+    <text id='text-1' x="25%" y="15%" dominantBaseline="middle" textAnchor="start" >
+        <tspan x="15%" y="15%" fill="#fefefe">Hi, I'm</tspan>
+        <tspan x="15%" y="25%" fontWeight='bolder' fill='#e57429'>Daniel Carrasco</tspan>
+    </text>
+
+    <text id='text-2' x="25%" y="15%" dominantBaseline="middle" textAnchor="end" fill="#fefefe">
+        <tspan x="80%" y="37%"><tspan fontWeight='bolder' fill="#fefefe">F</tspan>ull</tspan>
+        <tspan x="80%" y="47%"><tspan fontWeight='bolder' fill="#fefefe">S</tspan>tack</tspan>
+        <tspan x="80%" y="57%"><tspan fontWeight='bolder' fill="#fefefe">D</tspan>eveloper</tspan>
+    </text>    
+</svg>
+
