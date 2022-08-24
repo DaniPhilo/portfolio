@@ -97,8 +97,14 @@ form>button:hover {
 }
 
 .success-module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem;
-    background-color: $secondary_color;
+    background-color: $text_color_light;
+    color: $secondary_color;
     border-radius: $border_radius;
 }
 
@@ -107,10 +113,11 @@ form>button:hover {
     margin: 0.5rem auto 0 auto;
     padding: 0.5rem 1rem;
 
-    background-color: $secondary_color;
-    color: $text_color_light;
-    border: 2px solid $text_color_light;
+    background-color: $text_color_light;
+    color: $secondary_color;
+    border: 2px solid $secondary_color;
     border-radius: $border_radius;
+    font-weight: bold;
 
     transition: 0.25s ease-in-out;
     cursor: pointer;
