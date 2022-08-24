@@ -2,7 +2,6 @@ import React from 'react'
 
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import { EmailConfig } from '../assets/config.js';
 
 export default function Contact() {
 
@@ -21,10 +20,10 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      EmailConfig.EMAIL_SERVICE,
-      EmailConfig.EMAIL_TEMPLATE,
+      process.env.REACT_APP_EMAIL_SERVICE,
+      process.env.REACT_APP_EMAIL_TEMPLATE,
       toSend,
-      EmailConfig.EMAIL_KEY
+      process.env.REACT_APP_EMAIL_KEY
     )
       .then((response) => {
         setEmailSent('yes');
