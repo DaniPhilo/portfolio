@@ -1,5 +1,14 @@
 [
     {
+        "name": "Personal Portfolio",
+        "img": "./images/thumbnails/portfolio_thumbnail.png",
+        "description": "My portfolio is the place where I upload my personal projects. It was developed using React and SASS, and it was my first attempt to build an entire website by myself after learning how to code.",
+        "technologies": ["React", "SASS"],
+        "project_link": "https://glistening-gumdrop-c1df4c.netlify.app",
+        "gh_link": "https://github.com/DaniPhilo/portfolio",
+        "tags": ["JavaScript", "React", "SASS"] 
+    },
+    {
         "name": "Snake Game",
         "img": "./images/thumbnails/snake_thumbnail2.png",
         "description": "Who doesn't remember this game? Good old classics never die, and that's why I have decided to develop this snake game simulator as a tribute. Customize your speed, colors, and give it a try! Many more features will be added in the future.",
@@ -7,15 +16,6 @@
         "project_link": "https://wikipedia.com",
         "gh_link": "https://github.com/DaniPhilo/snake",
         "tags": ["JavaScript", "Games"]
-    },
-    {
-        "name": "Trello",
-        "img": "./images/thumbnails/test_thumbnail.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
-        "technologies": ["React", "TypeScript"],
-        "project_link": "https://wikipedia.com",
-        "gh_link": "",
-        "tags": ["JavaScript", "React"] 
     },
     {
         "name": "Trello",
