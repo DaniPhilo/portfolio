@@ -13,7 +13,7 @@
         "img": "./images/thumbnails/snake_thumbnail2.png",
         "description": "Who doesn't remember this game? Good old classics never die, and that's why I have decided to develop this snake game simulator as a tribute. Customize your speed, colors, and give it a try! Many more features will be added in the future.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "project_link": "https://wikipedia.com",
+        "project_link": "https://reliable-begonia-e6759f.netlify.app",
         "gh_link": "https://github.com/DaniPhilo/snake",
         "tags": ["JavaScript", "Games"]
     },
