@@ -6,6 +6,7 @@ import { send } from 'emailjs-com';
 export default function Contact() {
 
   const [emailSent, setEmailSent] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const [toSend, setToSend] = useState({
     name: '',
@@ -26,12 +27,13 @@ export default function Contact() {
       process.env.REACT_APP_EMAIL_KEY
     )
       .then((response) => {
-        setEmailSent('yes');
+        setEmailSent(true);
+        setSuccess(true);
         document.body.style.overflow = 'hidden';
         console.log('E-mail sent successfully', response.status, response.text);
       })
       .catch((err) => {
-        setEmailSent('no');
+        setEmailSent(true);
         document.body.style.overflow = 'hidden';
         console.log('Sending e-mail failed', err);
       });
@@ -41,6 +43,7 @@ export default function Contact() {
 
   const hideModule = () => {
     setEmailSent(false);
+    setSuccess(false);
     document.body.style.overflow = 'auto';
   }
 
@@ -66,10 +69,10 @@ export default function Contact() {
         <p>*Your email information <span>will not</span> be stored in any database or sold to any third parties. It will be used only to answer you back.</p>
       </div>
 
-      <div className={emailSent === 'yes' ? "success-module-container" : "hidden"}>
+      <div className={emailSent ? "success-module-container" : "hidden"}>
         {/* <div className="success-module-container"> */}
         <div className="success-module">
-          <h3>{emailSent === 'yes' ? 'Email sent successfully' : 'An error ocurred. Please, try again later'}</h3>
+          <h3>{success ? 'Email sent successfully' : 'An error ocurred. Please, try again later'}</h3>
           <button type='button' onClick={hideModule}>OK</button>
         </div>
       </div>

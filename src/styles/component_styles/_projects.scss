@@ -71,19 +71,25 @@
     font-size: 0.9rem;
 }
 
-.project-card-left > .project-info > .gh-project-link {
+.project-card-left > .project-info > .project-links {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
-.project-card-left > .project-info > .gh-project-link > a {
+.project-card-left > .project-info > .project-links > .gh-link {
     font-size: 1.5rem;
 }
-.project-card-left > .project-info > .gh-project-link > a:hover i {
+.project-card-left > .project-info > .project-links > .link {
+    height: fit-content;
+    font-size: 1rem;
+}
+.project-card-left > .project-info > .project-links > a:hover i {
     color: $accent_color;
 }
-.project-card-left > .project-info > .gh-project-link > a > i {
+.project-card-left > .project-info > .project-links > a > i {
     color: $text_color_light;
     transition: 0.25s ease-in-out;
 }
@@ -163,19 +169,24 @@
     font-size: 0.9rem;
 }
 
-.project-card-right > .project-info > .gh-project-link {
+.project-card-right > .project-info > .project-links {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
-.project-card-right > .project-info > .gh-project-link > a {
+.project-card-right > .project-info > .project-links > .gh-link {
     font-size: 1.5rem;
 }
-.project-card-right > .project-info >.gh-project-link > a > i {
+.project-card-right > .project-info > .project-links > .link {
+    font-size: 1rem;
+}
+.project-card-right > .project-info >.project-links > a > i {
     color: $text_color_light;
     transition: 0.25s ease-in-out;
 }
-.project-card-right > .project-info > .gh-project-link > a:hover i {
+.project-card-right > .project-info > .project-links > a:hover i {
     color: $accent_color;
 }
