@@ -41,8 +41,9 @@ export default function ProjectCard({ project, index }) {
                             })}
                         </ul>
                     </div>
-                    <div className='gh-project-link'>
-                        <a href={project.gh_link} target="_blank"><i className="fa-brands fa-github"></i></a>
+                    <div className='project-links'>
+                        <a className='gh-link' href={project.gh_link} target="_blank"><i className="fa-brands fa-github"></i></a>
+                        <a className='link' href={project.project_link} target="_blank"><i className="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -62,8 +63,9 @@ export default function ProjectCard({ project, index }) {
                             })}
                         </ul>
                     </div>
-                    <div className='gh-project-link'>
-                        <a href={project.gh_link} target="_blank"><i className="fa-brands fa-github"></i></a>
+                    <div className='project-links'>
+                        <a className='gh-link' href={project.gh_link} target="_blank"><i className="fa-brands fa-github"></i></a>
+                        <a className='link' href={project.project_link} target="_blank"><i className="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div className="project-img">
