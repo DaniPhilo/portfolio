@@ -56,7 +56,7 @@ export default function Header() {
                     <li><a href="#projects-section" className={currentSection === 'projects-section' ? 'active' : 'header-btn'} onClick={toggleMenu}>projects</a></li>
                     <li><a href="#contact-section" className={currentSection === 'contact-section' ? 'active' : 'header-btn'} onClick={toggleMenu}>contact</a></li>
                 </ul>
-                {windowSize <= 769 && <IconsSidebar />}
+                <IconsSidebar windowSize={windowSize}/>
             </header>
         </>
     )

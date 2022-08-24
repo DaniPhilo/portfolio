@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-export default function Icons_sidebar() {
-
-    const [windowSize, setWindowSize] = useState(false);
-
-    const updateWindowSize = () => {
-        setWindowSize(window.innerWidth);
-    }
+export default function Icons_sidebar({ windowSize }) {
 
     const toGitHub = () => {
         return window.open("https://github.com/DaniPhilo?tab=repositories");
@@ -15,12 +9,6 @@ export default function Icons_sidebar() {
     const toLinkedIn = () => {
         return window.open("https://www.linkedin.com/in/daniel-carrasco-casado/");
     }
-
-    useEffect(() => {
-        updateWindowSize();
-    }, []);
-
-    window.addEventListener('resize', updateWindowSize);
 
     return (
         <aside className={windowSize > 769 || !windowSize ? 'full-sidebar' : 'mobile-sidebar'}>

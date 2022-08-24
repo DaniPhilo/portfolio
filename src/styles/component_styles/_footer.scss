@@ -38,3 +38,15 @@
 .footer-section > p > a:hover {
     color: $accent_color;
 }
+
+.sidebar-cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 22;
+
+    width: 10vw;
+    height: 17vh;
+
+    background-color: $secondary_color;
+}
