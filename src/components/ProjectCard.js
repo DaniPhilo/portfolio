@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function ProjectCard({ project, index }) {
 
@@ -7,6 +7,10 @@ export default function ProjectCard({ project, index }) {
     const updateWindowWidth = () => {
         setWindowSize(window.innerWidth);
     }
+
+    useEffect(() => {
+        setWindowSize(window.innerWidth);
+    }, []);
 
     const toProject = (url) => {
         if (windowSize <= 550) {
@@ -19,18 +23,18 @@ export default function ProjectCard({ project, index }) {
 
     return (<>
         {index % 2 === 0 ?
-            <div className='project-card-left' onClick={() => toProject(project.project_link)}>
+            <div className='project-card-left'>
                 <div className="project-img">
                     <a href={project.project_link} target="_blank"><img src={project.img} alt="" /></a>
                 </div>
                 <div className="project-info">
-                    <div className="project-title">
+                    <div className="project-title" onClick={() => toProject(project.project_link)}>
                         <h3>{project.name}</h3>
                     </div>
-                    <div className='project-description'>
+                    <div className='project-description' onClick={() => toProject(project.project_link)}>
                         <p>{project.description}</p>
                     </div>
-                    <div className="project-techs">
+                    <div className="project-techs" onClick={() => toProject(project.project_link)}>
                         <ul className="tech-list">
                             {project.technologies.map((tech, index) => {
                                 return <li key={index}>{tech}</li>
@@ -43,15 +47,15 @@ export default function ProjectCard({ project, index }) {
                 </div>
             </div>
             :
-            <div className='project-card-right' onClick={() => toProject(project.project_link)}>
+            <div className='project-card-right'>
                 <div className="project-info">
-                    <div className="project-title">
+                    <div className="project-title" onClick={() => toProject(project.project_link)}>
                         <h3>{project.name}</h3>
                     </div>
-                    <div className='project-description'>
+                    <div className='project-description' onClick={() => toProject(project.project_link)}>
                         <p>{project.description}</p>
                     </div>
-                    <div className="project-techs">
+                    <div className="project-techs" onClick={() => toProject(project.project_link)}>
                         <ul className="tech-list">
                             {project.technologies.map((tech, index) => {
                                 return <li key={index}>{tech}</li>
