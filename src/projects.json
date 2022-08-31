@@ -18,13 +18,13 @@
         "tags": ["JavaScript", "Games"]
     },
     {
-        "name": "Trello",
-        "img": "./images/thumbnails/test_thumbnail.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
-        "technologies": ["React", "TypeScript"],
-        "project_link": "https://wikipedia.com",
-        "gh_link": "",
-        "tags": ["JavaScript", "React"] 
+        "name": "Meteor Market",
+        "img": "./images/thumbnails/nasa_api_thumbnail.png",
+        "description": "In this shop, you can buy your own piece of the cosmos! Meteorites and asteroids are here for sale, using the API from NASA, and a DB in MongoDB. The frontend was developed with React, and the backend with Node.js / Express. The authentication process was made with JWT.",
+        "technologies": ["React", "Node.js", "JWT", "MongoDB"],
+        "project_link": "https://chimerical-concha-25ad5f.netlify.app",
+        "gh_link": "https://github.com/DaniPhilo/NASA_API",
+        "tags": ["React", "Node.js", "JWT", "MongoDB"] 
     },
     {
         "name": "Trello",

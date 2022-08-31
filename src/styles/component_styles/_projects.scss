@@ -57,6 +57,9 @@
     text-align: end;
     line-height: $paragraph_line_height;
 }
+.project-card-left > .project-info > .project-description > p > span {
+    color: $secondary_accent_color;
+}
 
 .project-card-left > .project-info > .project-techs > .tech-list {
     display: flex;
