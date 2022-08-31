@@ -7,11 +7,12 @@
 }
 
 .tags-container > i {
-    color: $accent_color;
+    color: $secondary_accent_color;
 }
 
 .tags-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 2rem;
 
@@ -29,15 +30,15 @@
 }
 
 .tag-btn:hover {
-    color: $accent_color;
-    // background-color: $accent_color;
+    color: $secondary_accent_color;
+    // background-color: $secondary_accent_color;
     border: 1px solid $primary_color;
 }
 
 .marked {
     padding: 0.25rem;
-    // background-color: $accent_color;
-    color: $accent_color;
+    // background-color: $secondary_accent_color;
+    color: $secondary_accent_color;
     border: 1px solid $primary_color;
     border-radius: $border_radius;
     letter-spacing: 1px;

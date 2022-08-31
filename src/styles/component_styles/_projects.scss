@@ -57,6 +57,10 @@
     text-align: end;
     line-height: $paragraph_line_height;
 }
+.project-card-left > .project-info > .project-description > span {
+    color: #cb6826d8;
+    font-weight: bold;
+}
 
 .project-card-left > .project-info > .project-techs > .tech-list {
     display: flex;
@@ -155,6 +159,10 @@
     padding: 1.5rem;
     border-radius: $border_radius;
     line-height: $paragraph_line_height;
+}
+.project-card-right > .project-info > .project-description > span {
+    color: #cb6826d8;
+    font-weight: bold;
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {

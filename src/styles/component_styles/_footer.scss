@@ -27,7 +27,7 @@
 }
 
 .footer-section > p > span {
-    color: $accent_color;
+    color: $secondary_accent_color;
 }
 
 .footer-section > p > a {
@@ -36,7 +36,7 @@
     transition: 0.25s ease-in-out;
 }
 .footer-section > p > a:hover {
-    color: $accent_color;
+    color: $secondary_accent_color;
 }
 
 .sidebar-cover {
