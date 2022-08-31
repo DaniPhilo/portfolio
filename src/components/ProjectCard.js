@@ -31,9 +31,7 @@ export default function ProjectCard({ project, index }) {
                     <div className="project-title" onClick={() => toProject(project.project_link)}>
                         <h3>{project.name}</h3>
                     </div>
-                    <div className='project-description' onClick={() => toProject(project.project_link)}>
-                        <p>{project.description}</p>
-                    </div>
+                    <div className='project-description' onClick={() => toProject(project.project_link)} dangerouslySetInnerHTML={{ __html: project.description }}></div>
                     <div className="project-techs" onClick={() => toProject(project.project_link)}>
                         <ul className="tech-list">
                             {project.technologies.map((tech, index) => {
@@ -53,9 +51,7 @@ export default function ProjectCard({ project, index }) {
                     <div className="project-title" onClick={() => toProject(project.project_link)}>
                         <h3>{project.name}</h3>
                     </div>
-                    <div className='project-description' onClick={() => toProject(project.project_link)}>
-                        <p>{project.description}</p>
-                    </div>
+                    <div className='project-description' onClick={() => toProject(project.project_link)} dangerouslySetInnerHTML={{ __html: project.description }}></div>
                     <div className="project-techs" onClick={() => toProject(project.project_link)}>
                         <ul className="tech-list">
                             {project.technologies.map((tech, index) => {
