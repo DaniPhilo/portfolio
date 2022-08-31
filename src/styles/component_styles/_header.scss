@@ -41,11 +41,11 @@
     transition: 0.25s ease-in-out;
 }
 .full-header > ul > li > a:hover {
-    color: $accent-color;
+    color: $secondary_accent_color;
 }
 
 .full-header > ul > li > .active {
-    color: $accent-color;
+    color: $secondary_accent_color;
 }
 
 
@@ -92,7 +92,7 @@
 }
 
 .mobile-header > ul > li:hover a {
-    color: $accent-color;
+    color: $secondary_accent_color;
 }
 
 .mobile-header > ul > li > a {
@@ -106,7 +106,7 @@
 }
 
 .mobile-header > ul > li > .active {
-    color: $accent-color;
+    color: $secondary_accent_color;
 }
 
 .hamburger-container.show-btn {
