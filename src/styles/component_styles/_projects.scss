@@ -22,7 +22,7 @@
 .project-card-left > .project-img > a {
     display: inline-block;
     width: 100%;
-    filter: grayscale(50%);
+    // filter: grayscale(50%);
     transition: 0.25s ease-in-out;
 }
 .project-card-left > .project-img > a:hover {
@@ -120,7 +120,7 @@
 .project-card-right > .project-img > a {
     display: inline-block;
     width: 100%;
-    filter: grayscale(50%);
+    // filter: grayscale(50%);
     transition: 0.25s ease-in-out;
 }
 .project-card-right > .project-img > a:hover {
