@@ -12,12 +12,13 @@ export default function About() {
         <div className='about-img'></div>
 
         <div className="about-description">
-          I first came into contact with basic web programming during college, and I fell in love with software development immediately. I was determined to pursue a career in this field, and to do so, I started learning by myself, and then I enrolled in a Full Stack Bootcamp to complete my education. Now, I am actively seeking to find a job as a web programmer and keep growing as a developer.
+          I first came into contact with basic web programming during college, and I fell in love with software development immediately. I was determined to pursue a career in this field, and to do so, I started learning by myself, and then I enrolled in a <span>Full Stack Developer Bootcamp</span> to complete my education. Now, I am actively seeking to find a job as a web programmer and keep growing as a developer.
         </div>
         <div className="about-skills">
           <ul>
             <li>React</li>
             <li>Redux</li>
+            <li>SASS</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>MongoDB</li>

@@ -1,12 +1,12 @@
 [
     {
-        "name": "Personal Portfolio",
-        "img": "./images/thumbnails/portfolio_thumbnail.png",
-        "description": "My portfolio is the place where I upload my personal projects. It was developed using <span>React</span> and <span>SASS</span>, and it was my first attempt to build an entire website by myself after learning how to code.",
-        "technologies": ["React", "SASS"],
-        "project_link": "https://glistening-gumdrop-c1df4c.netlify.app",
-        "gh_link": "https://github.com/DaniPhilo/portfolio",
-        "tags": ["JavaScript", "React", "SASS"] 
+        "name": "Meteor Market",
+        "img": "./images/thumbnails/nasa_api_thumbnail.png",
+        "description": "In this shop, you can buy your own piece of the cosmos! Meteorites and asteroids are here for sale, using the <span>API</span> from NASA, and a DB in <span>MongoDB</span>. The frontend was developed with <span>React</span>, and the backend with <span>Node.js</span> / <span>Express</span>. The authentication process was made with <span>JWT</span>.",
+        "technologies": ["React", "Node.js", "JWT", "MongoDB"],
+        "project_link": "https://chimerical-concha-25ad5f.netlify.app",
+        "gh_link": "https://github.com/DaniPhilo/NASA_API",
+        "tags": ["React", "Node.js", "JWT", "MongoDB", "SASS"] 
     },
     {
         "name": "Snake Game",
@@ -15,24 +15,15 @@
         "technologies": ["HTML", "CSS", "JavaScript"],
         "project_link": "https://reliable-begonia-e6759f.netlify.app",
         "gh_link": "https://github.com/DaniPhilo/snake",
-        "tags": ["JavaScript", "Games"]
+        "tags": ["Games"]
     },
     {
-        "name": "Meteor Market",
-        "img": "./images/thumbnails/nasa_api_thumbnail.png",
-        "description": "In this shop, you can buy your own piece of the cosmos! Meteorites and asteroids are here for sale, using the <span>API</span> from NASA, and a DB in <span>MongoDB</span>. The frontend was developed with <span>React</span>, and the backend with <span>Node.js</span> / <span>Express</span>. The authentication process was made with <span>JWT</span>.",
-        "technologies": ["React", "Node.js", "JWT", "MongoDB"],
-        "project_link": "https://chimerical-concha-25ad5f.netlify.app",
-        "gh_link": "https://github.com/DaniPhilo/NASA_API",
-        "tags": ["React", "Node.js", "JWT", "MongoDB"] 
-    },
-    {
-        "name": "Trello",
-        "img": "./images/thumbnails/test_thumbnail.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officia.",
-        "technologies": ["React", "TypeScript"],
-        "project_link": "https://wikipedia.com",
-        "gh_link": "",
-        "tags": ["JavaScript", "React"] 
+        "name": "Personal Portfolio",
+        "img": "./images/thumbnails/portfolio_thumbnail.png",
+        "description": "My portfolio is the place where I upload my personal projects. It was developed using <span>React</span> and <span>SASS</span>, and it was my first attempt to build an entire website by myself after learning how to code.",
+        "technologies": ["React", "SASS"],
+        "project_link": "https://glistening-gumdrop-c1df4c.netlify.app",
+        "gh_link": "https://github.com/DaniPhilo/portfolio",
+        "tags": ["React", "SASS"] 
     }
 ]
