@@ -21,6 +21,9 @@
     width: calc(100% - 300px);
     line-height: $paragraph_line_height;
 }
+.about-description > span {
+    color: $secondary_accent_color;
+}
 
 .about-skills {
     width: 50%;
