@@ -85,7 +85,7 @@
         letter-spacing: $subtitle_letter_spacing;
     }
     .title1 > h1:last-child {
-        color: $accent_color;
+        color: $secondary_accent_color;
     }
     .title2 {
         font-size: $subtitle_size;
@@ -132,12 +132,23 @@
         grid-column: 1 / 13;
         border-radius: $border_radius;
     }
+    .project-card-left > .project-img > a,
+    .project-card-right > .project-img > a {
+        height: 100%;
+    }
+    .project-card-left > .project-img > a > img,
+    .project-card-right > .project-img > a > img {
+        max-width: 500px;
+        height: 100%;
+        object-fit: cover;
+        
+    }
     .project-card-left > .project-info,
     .project-card-right > .project-info {
         grid-column: 1 / 13;
         height: 100%;
         padding: 1rem 0;
-        background-color: hsla(273, 28%, 38%, 0.75);
+        background-color: $accent_color_transparent;
         border-radius: $border_radius;
     }
     .project-card-left > .project-info > .project-title > h3,

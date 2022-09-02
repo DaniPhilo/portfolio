@@ -1,20 +1,14 @@
 .project-card-left {
-    // position: relative;
-    // display: flex;
-    // align-items: center;
     margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    max-height: 400px;
 }
 .project-card-left:first-child {
     margin-top: 3rem;
 }
 
 .project-card-left > .project-img {
-    // display: inline-block;
-    // // background-color: greenyellow;
-    // width: 55%;
-    // height: 35vh;
     grid-column: 2 / 9;
     grid-row: 1 / 2;
 }
@@ -36,9 +30,6 @@
 }
 
 .project-card-left > .project-info {
-    // display: inline-block;
-    // width: 55%;
-    // margin-left: -10%;
     grid-column: 8 / 13;
     grid-row: 1 / 2;
     align-self: center;
@@ -58,8 +49,10 @@
     line-height: $paragraph_line_height;
 }
 .project-card-left > .project-info > .project-description > span {
-    color: #cb6826d8;
+    // color: #cb6826d8;
+    color: $secondary_accent_color;
     font-weight: bold;
+    text-shadow: 0.2px 0.2px 0.5px rgb(0, 0, 0);
 }
 
 .project-card-left > .project-info > .project-techs > .tech-list {
@@ -100,19 +93,12 @@
 
 
 .project-card-right {
-    // position: relative;
-    // display: flex;
-    // align-items: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 8rem;
 }
 
 .project-card-right > .project-img {
-    // display: inline-block;
-    // background-color: greenyellow;
-    // width: 55%;
-    // height: 35vh;
     grid-column: 5 / 12;
     grid-row: 1 / 2;
 }
@@ -134,10 +120,6 @@
 }
 
 .project-card-right > .project-info {
-    // display: inline-block;
-    // width: 55%;
-    // margin-right: -10%;
-    // z-index: 2;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
     z-index: 2;
@@ -161,8 +143,10 @@
     line-height: $paragraph_line_height;
 }
 .project-card-right > .project-info > .project-description > span {
-    color: #cb6826d8;
+    // color: #cb6826d8;
+    color: $secondary_accent_color;
     font-weight: bold;
+    text-shadow: 0.2px 0.2px 0.5px rgb(0, 0, 0);
 }
 
 .project-card-right > .project-info > .project-techs > .tech-list {
