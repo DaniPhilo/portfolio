@@ -2,7 +2,7 @@
     {
         "name": "Meteor Market",
         "img": "./images/thumbnails/nasa_api_thumbnail.png",
-        "description": "In this shop, you can buy your own piece of the cosmos! Meteorites and asteroids are here for sale, using the <span>API</span> from NASA, and a DB in <span>MongoDB</span>. The frontend was developed with <span>React</span>, and the backend with <span>Node.js</span> / <span>Express</span>. The authentication process was made with <span>JWT</span>.",
+        "description": "In this shop, you can buy your own piece of the cosmos! Meteorites and asteroids are here for sale, using an <span>API</span> from the NASA and <span>MongoDB</span>. The frontend was developed with <span>React</span>, and the backend with <span>Node.js</span> / <span>Express</span>. The authentication process was made with <span>JWT</span>.",
         "technologies": ["React", "Node.js", "JWT", "MongoDB"],
         "project_link": "https://splendorous-faun-f67936.netlify.app",
         "gh_link": "https://github.com/DaniPhilo/NASA_API",
